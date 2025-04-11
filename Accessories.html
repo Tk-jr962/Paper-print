@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #122620;
+            padding: 30px 20px;
+            color: white;
+            border: 4px #1a8162 solid;
+        }
+        .logo{
+            font-size: 30px;
+        }
+        .navbar .logo {
+            padding: 10px;
+            background-color:  #122620;;
+            border-radius: 5px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 100px;
+            font-size: 20px;
+            color: white;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        .offers-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .offer-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(26, 129, 98);
+            text-align: center;
+            transition: transform 0.3s ease;
+            background-color: black;
+        }
+        .offer-card:hover {
+            transform: translateY(-5px);
+        }
+        .offer-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .offer-card h3 {
+            margin: 15px 0;
+            font-size: 20px;
+            color: white;
+        }
+        .offer-card p {
+            color: white;
+
+        }
+        .offer-card .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d9534f;
+            margin: 10px 0;
+        }
+        .offer-card button {
+            background-color:  #122620;;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border: 2px #1a8162 solid;
+        }
+        .offer-card button:hover {
+            background-color: rgb(109, 248, 248);
+            color:darkslategray
+        }
+        .button{
+            background-color: rgb(109, 248, 248);
+        }
+    </style>
+</head>
+<body>
+        <div class="navbar">
+            <div class="logo">PP</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Product.html">Products</a>
+                <a href="Accessories.html">Offers</a>
+                <a href="Aboutus.html">Contact Us</a>
+            </div>
+        </div>
+    
+
+    <h2 style="text-align: center; padding: 20px; font-size: 25px;">Exclusive Offers Just for You!</h2>
+    <div class="offers-container">
+        <div class="offer-card">
+            <img src="bag 2.webp" alt="Offer 1">
+            <h3>Buy 1 Get 1 Free</h3>
+            <p>Don't miss out on this amazing deal. Limited time offer!</p>
+            <div class="price">$19.99</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+        <div class="offer-card">
+            <img src="bag.jpg" alt="Offer 2">
+            <h3>50% Off on New Arrivals</h3>
+            <p>Enjoy half-price discounts on selected items!</p>
+            <div class="price">$12.99</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+        <div class="offer-card">
+            <img src="bag 3.avif" alt="Offer 3">
+            <h3>Exclusive Members' Discount</h3>
+            <p>Sign up now and enjoy additional perks and discounts.</p>
+            <div class="price">$79.99</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+    </div>
+    <div class="offers-container">
+        <div class="offer-card">
+            <img src="mug 3.png" alt="Offer 1">
+            <h3>Buy 1 Get 1 Free</h3>
+            <p>Don't miss out on this amazing deal. Limited time offer!</p>
+            <div class="price">$14.99</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+        <div class="offer-card">
+            <img src="mug 2.jpg" alt="Offer 2">
+            <h3>50% Off on New Arrivals</h3>
+            <p>Enjoy half-price discounts on selected items!</p>
+            <div class="price">$30.00</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+        <div class="offer-card">
+            <img src="cerramic mug.jpg" alt="Offer 3">
+            <h3>Exclusive Members' Discount</h3>
+            <p>Enjoy some of the most luxurios products for a low price right now.</p>
+            <div class="price">$9.99</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+    </div>
+    <div class="offers-container">
+        <div class="offer-card">
+            <img src="pp 6 (freeze paper).jpg" alt="Offer 1">
+            <h3>Get yourself a freeze paper work for up to 30% off!!</h3>
+            <p>One of our most liked offers</p>
+            <div class="price">$7.00</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+        <div class="offer-card">
+            <img src="pp 5 (heat transfer).jpg" alt="Offer 2">
+            <h3>Might wanna add some heat transfer work for up to 30% off!!</h3>
+            <p>Enjoy a simple and affordable item!</p>
+            <div class="price">$5.00</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+        </div>
+    </div>
+    <div class="offers-container">
+        <div class="offer-card">
+            <img src="calender.jpg" alt="Offer 1">
+            <h3>Get a new decoration to your house,office and more!!!</h3>
+            <p>One of our most liked offers</p>
+            <div class="price">$12.00</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+</body>
+
+<footer style="background-color:black; text-align: center; padding: 50px ; font-family: Arial, sans-serif; color: white; font-size: 15px;">
+    <p>&copy; 2025 Paper Print. All Rights Reserved.</p>
+    <p>
+        <a href="#" style="color: rgb(255, 255, 255); text-decoration: none;">Privacy Policy</a> |
+        <a href="#" style="color: rgb(255, 255, 255); text-decoration: none;">Terms & Conditions</a> |
+        <a href="#" style="color: rgb(255, 255, 255); text-decoration: none;">Contact Us</a>
+    </p>
+    <p>Paper Print™ is a trademark of PaperPrintInc.<br>
+       Unauthorized use or reproduction of any content is strictly prohibited.</p>
+    <hr style="border: 1px solid rgb(255, 255, 255); width: 80%;">
+    <div style="display: flex; justify-content: center; gap: 50px;">
+        <span>Uganda(UG)/English</span>
+        <span>Do Not Sell or Share My Personal Information</span>
+        <span>Accessibility</span>
+        <span>Stay in the loop?</span>
+    </div>
+</footer>
+</html>
