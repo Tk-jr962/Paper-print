@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #122620;
+            padding: 30px 20px;
+            color: white;
+            border: 4px #1a8162 solid;
+        }
+        .logo{
+            font-size: 30px;
+        }
+        .navbar .logo {
+            padding: 10px;
+            background-color:  #122620;
+            border-radius: 5px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 100px;
+            font-size: 20px;
+            color: white;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        .offers-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .offer-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(26, 129, 98);
+            text-align: center;
+            transition: transform 0.3s ease;
+            background-color: black;
+        }
+        .offer-card:hover {
+            transform: translateY(-5px);
+        }
+        .offer-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .offer-card h3 {
+            margin: 15px 0;
+            font-size: 20px;
+            color: white;
+        }
+        .offer-card p {
+            color: white;
+
+        }
+        .offer-card .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d9534f;
+            margin: 10px 0;
+        }
+        .offer-card button {
+            background-color:  #122620;;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border: 2px #1a8162 solid;
+        }
+        .offer-card button:hover {
+            background-color: rgb(109, 248, 248);
+            color:darkslategray
+        }
+        .button{
+            background-color: rgb(109, 248, 248);
+        }
+    </style> 
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">PP</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Product.html">Products</a>
+            <a href="Accessories.html">Offers</a>
+            <a href="marketing.html">Marketing</a>
+            <a href="Aboutus.html">Contact Us</a>
+        </div>
+    </div>
+
+
+    <h1 style="text-align: center; padding: 20px; font-size: 35px;">Marketing Tools you can use!</h1>
+    <h2 style="text-align: center; padding: 20px; font-size: 25px;">Logos</h2>
+    <div class="offers-container">
+        <div class="offer-card">
+            <img src="pp 15.jpg" alt="Offer 1">
+            <h3>Patterns</h3>
+            <p>Make custom design Patterns</p>
+            <div class="price">$4.50 per design</div>
+            <div class="price">Get 10 design at $35.00</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+        <div class="offer-card">
+            <img src="pp 16.jpg" alt="Offer 2">
+            <h3>3D Logos</h3>
+            <div class="price">$2.50 per design</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+        <div class="offer-card">
+            <img src="pp 17.jpg" alt="Offer 3">
+            <h3>Logo</h3>
+            <div class="price">Free</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+    </div>
+    <h2 style="text-align: center; padding: 20px; font-size: 25px;">Recycable Materials</h2>
+    <div class="offers-container">
+        <div class="offer-card">
+            <img src="pp 18.jpg" alt="Offer 1">
+            <h3>Paper sheets</h3>
+            <div class="price">$19.99 per 100 paper sheets</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+        <div class="offer-card">
+            <img src="pp 19.jpg" alt="Offer 2">
+            <h3>Plain glass</h3>
+            <div class="price">$30.00 per dozen</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+        <div class="offer-card">
+            <img src="pp 20.webp" alt="Offer 3">
+            <h3>Steel pipes</h3>
+            <div class="price">$45.00 per dozen</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+    </div>
+    <h2 style="text-align: center; padding: 20px; font-size: 25px;">Office</h2>
+    <div class="offers-container">
+        <div class="offer-card">
+            <img src="pp 29.jpg" alt="Offer 1">
+            <h3>Small-Mid-Large Billboards</h3>
+            <div class="price">$4500-$15000 per month</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+        <div class="offer-card">
+            <img src="pp 32.jpeg" alt="Offer 2">
+            <h3>Storages</h3>
+            <div class="price">$799/= per month</div>
+            <button>Shop Now</button>
+            <button>Join Now</button>
+        </div>
+    </div>
+
+</body>
+
+<footer style="background-color:  #122620; text-align: center; padding: 50px ; font-family: Arial, sans-serif; color: white; font-size: 15px;">
+    <p>&copy; 2025 Paper Print. All Rights Reserved.</p>
+    <p>
+        <a href="#" style="color: rgb(255, 255, 255); text-decoration: none;">Privacy Policy</a> |
+        <a href="#" style="color: rgb(255, 255, 255); text-decoration: none;">Terms & Conditions</a> |
+        <a href="#" style="color: rgb(255, 255, 255); text-decoration: none;">Contact Us</a>
+    </p>
+    <p>Paper Print™ is a trademark of PaperPrintInc.<br>
+       Unauthorized use or reproduction of any content is strictly prohibited.</p>
+    <hr style="border: 1px solid rgb(255, 255, 255); width: 80%;">
+    <div style="display: flex; justify-content: center; gap: 50px;">
+        <span>Uganda(UG)/English</span>
+        <span>Do Not Sell or Share My Personal Information</span>
+        <span>Accessibility</span>
+        <span>Stay in the loop?</span>
+    </div>
+</footer>
+</html>
