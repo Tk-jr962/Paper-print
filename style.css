@@ -13,12 +13,12 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #122620;
-    padding: 30px 20px;
+    padding: 30px 20px ;
     color: white;
     border: 4px #1a8162 solid;
 }
 .navbar .logo {
-    padding: 10px;
+    padding: 10vhx;
     background-color: #122620;
     border-radius: 5px;
 }
@@ -34,6 +34,49 @@ body {
 .nav-links a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+
+@media (max-width: 768px) {
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background: #444;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    }
+
+.nav-links.active {
+    display: flex;
+    }
+
+.menu-toggle {
+    display: block;
+    }
+  }
+.welcome{
+    width: 100%;
+    padding: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+.welcome h2{
+    font-size: 45px;
+}
+.welcome p{
+    font-size: 25px;
 }
 .product-section {
     width: 100%;
