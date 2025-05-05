@@ -39,6 +39,36 @@
             text-decoration: none;
             color: rgb(255, 255, 255);
         }
+        .menu-toggle {
+         display: none;
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            background: #444;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            width: 150px;
+            padding: 10px;
+            border-radius: 5px;
+            }
+
+        .nav-links.active {
+            display: flex;
+            }
+
+        .menu-toggle {
+            display: block;
+        }
+        }
         .offers-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -101,6 +131,7 @@
     <div class="navbar">
         <div class="logo">PP</div>
         <div class="nav-links">
+            <button class="menu-toggle" id="menu-toggle">☰</button>
             <a href="index.html">Home</a>
             <a href="Product.html">Products</a>
             <a href="Accessories.html">Offers</a>
@@ -181,6 +212,14 @@
 
 </body>
 
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 <footer style="background-color:  #122620; text-align: center; padding: 50px ; font-family: Arial, sans-serif; color: white; font-size: 15px;">
     <p>&copy; 2025 Paper Print. All Rights Reserved.</p>
     <p>
