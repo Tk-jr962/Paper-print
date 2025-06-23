@@ -57,7 +57,10 @@ body {
     padding: 10px;
     border-radius: 5px;
     }
-
+.product-grid {
+        justify-content: space-around;
+    }
+    
 .nav-links.active {
     display: flex;
     }
