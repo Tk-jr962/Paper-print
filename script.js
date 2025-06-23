@@ -1,29 +1,30 @@
-const buttons = document.querySelectorAll('.button')
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
 
-buttons.forEach(button => {
-    button.addEventListener('click', function (e) {
-        const x = e.pageX
-        const y = e.pageY
+          menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
 
-        const buttonTop = e.target.offsetTop
-        const buttonLeft = e.target.offsetLeft
+        const buttons = document.querySelectorAll('.buttons button');
 
-        const xInside = x - buttonLeft
-        const yInside = y - buttonTop
+        buttons.forEach(button => {
+            button.addEventListener('click', function (e) {
+                const x = e.pageX;
+                const y = e.pageY;
 
-        const circle = document.createElement('span')
-        circle.classList.add('circle')
-        circle.style.top = yInside + 'px'
-        circle.style.left = xInside + 'px'
+                const buttonTop = e.target.offsetTop;
+                const buttonLeft = e.target.offsetLeft;
 
-        this.appendChild(circle)
+                const xInside = x - buttonLeft;
+                const yInside = y - buttonTop;
 
-        setTimeout(() => circle.remove(), 500)
-    })
-})
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
+                const circle = document.createElement('span');
+                circle.classList.add('circle');
+                circle.style.top = yInside + 'px';
+                circle.style.left = xInside + 'px';
 
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
+                this.appendChild(circle);
+
+                setTimeout(() => circle.remove(), 500);
+            });
+        });
