@@ -13,6 +13,7 @@
         }
 
         .navbar {
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -55,7 +56,7 @@
             font-size: 30px;
         }
         .navbar .logo {
-            padding: 10px;
+            padding: 10vhx;
             background-color:  #122620;
             border-radius: 5px;
         }
@@ -130,8 +131,8 @@
 <body>
         <div class="navbar">
             <div class="logo">PP</div>
-            <div class="nav-links">
-                <button class="menu-toggle" id="menu-toggle">☰</button>
+            <button class="menu-toggle" id="menu-toggle">☰</button> 
+            <div class="nav-links" id="nav-links"> 
                 <a href="index.html">Home</a>
                 <a href="Product.html">Products</a>
                 <a href="Accessories.html">Offers</a>
@@ -228,8 +229,8 @@
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('nav-links');
 
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+        menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
     });
   </script>
 <footer style="background-color:#122620; text-align: center; padding: 50px ; font-family: Arial, sans-serif; color: white; font-size: 15px;">
